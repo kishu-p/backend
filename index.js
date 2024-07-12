@@ -11,11 +11,11 @@ const port = 3001;
 
 app.use((req, res, next) => {
 	console.log("Hello from middleware 1");
-	// next();
+	next();
 });
 app.use((req, res, next) => {
 	console.log("Hello from middleware 2");
-	return res.end("Hey");
+	next();
 });
 // REST API
 app.get("/", (req, res) => {
