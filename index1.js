@@ -7,7 +7,7 @@ app.get("/", (req, res) =>{
 });
 
 app.get("/about", (req,res) => {
-	return res.send(`Bonjour 🙏 ${req.query.name}, ${req.query.id}`)
+	return res.send(`NAMASTE 🙏 ${req.query.name}, ${req.query.id}`)
 })
 
 app.listen(port, () => {
